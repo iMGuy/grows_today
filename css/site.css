@@ -9,3 +9,13 @@
   background-color: transparent;
   height: 40vh;
 }
+
+.jumbotron {
+  background: url(../images/301H.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: transparent;
+  height: 40vh;
+}
