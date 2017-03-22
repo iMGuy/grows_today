@@ -1,3 +1,11 @@
+<div class=/"row/">
+   <div class=/"col-md-12/">
+        <h2>טבלת שתילה</h2>
+        <?php echo $table->execute();?>  
+    </div>
+</div>
+
+
 <?php 
 
 	include 'classes/wrapper.php';
