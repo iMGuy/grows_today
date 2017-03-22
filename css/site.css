@@ -1,11 +1,17 @@
-
-
 .jumbotron {
-  background: url(../images/301H.jpg);
+  background: url(../images/main_banner.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: transparent;
   height: 40vh;
+}
+
+.jumbotron h1, .jumbotron p {
+  color: #fff;
+}
+
+.container-fluid {
+  max-width: 1280px;
 }

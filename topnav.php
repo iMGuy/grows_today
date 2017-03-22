@@ -40,7 +40,7 @@
       </form>
       -->
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="/index.php">דף הבית</a></li>
+        <li class="active"><a href="/index.php"><?php echo $lang['MENU_HOME'] ?></a></li>
         <!--
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
