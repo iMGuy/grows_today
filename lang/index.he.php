@@ -19,6 +19,6 @@ $lang['SLOGAN_TEXT1'] = 'שורה שנייה ציטוט - שורה שנייה צ
 $lang['SLOGAN_TEXT2'] = 'שורה נוספת שןרה נוספת שדל גכלכגכ'; 
 
 // Page headers;
-// $lang['HEADING'] = 'דף הבית';
+$lang['HEADING'] = 'טבלת שתילה';
 
 ?>

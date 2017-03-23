@@ -1,4 +1,10 @@
-<?php 
+<?php
+
+	include 'classes/wrapper.php';
+	include 'lang/index.he.php';
+	include 'menus/topmenu.php';
+	include 'classes/menu.class.php';
+	
     
     $db = new Database();
     
@@ -65,5 +71,19 @@
 						</div>
 					</div>';
 	}
+	
+	/*
+    * Building page menu html
+    */
+    
+    $top_menu = new Menu();
+
+	$top_menu_html = $top_menu->menu_sections($top_menu_html);
+	$top_menu_html = $top_menu->menu_section_wrapper();
+	$top_menu_html = $top_menu->menu_pages_wrapper();
+	$top_menu_html = $top_menu->menu_header('Grows.Today','index.php');
+	$top_menu_html = $top_menu->menu_div_wrapper( $top_menu_settings['main_div']);
+	$top_menu_html = $top_menu->menu_nav_wrapper( $top_menu_settings['nav']);
+	$top_menu_html = $top_menu->execute();
 
 ?>
