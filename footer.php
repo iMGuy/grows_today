@@ -1,1 +1,0 @@
-<p>All rights (c) - This is a beta version - for private use</p>

@@ -1,55 +1,17 @@
-<?php 
-	include 'classes/wrapper.php';
-	include 'lang/index.he.php';
-	include 'data/index.php';
-?>
-<!DOCTYPE html>
-<html lang="he">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="icon" href="../../favicon.ico"> -->
-		
-		<base href="https://gtoday-shguy.c9users.io/growstoday/grows_today/" target="_blank">
-		<?php
-        header_metas_and_tags();    		
-    		include 'data/head_CSS.php'; ?> 
+<?php
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
 
-  </head>
-  <body style="direction:rtl"> 
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define('WP_USE_THEMES', true);
 
-    <?php include 'topnav.php'; 
-          echo $page_banner;   ?>
-    
-    <div class="container">
-      
-      <!-- Page H2 header -->
-		  <?php echo $heading ?>
-		  
-    	<!-- DataTable Section -->
-      <div class="row">
-		  	<div class="col-md-12">
-		    	<h2>טבלת שתילה</h2>
-		      <?php echo $table->execute();?>  
-		    </div>
-			</div>
-			
-      <!-- Example row of columns -->
-      <?php echo $lang['SECTION_1']['texts'];?>
-      
-   	</div>
-
-      <hr>
-
-      <footer>
-        
-          <?php include 'footer.php'; ?>
-          
-      </footer>
-    </div> <!-- /container -->
-
-    <?php include 'data/footer_JS.php' ?>
-    
-  </body>
-</html>
+/** Loads the WordPress Environment and Template */
+require( dirname( __FILE__ ) . '/wp-blog-header.php' );
