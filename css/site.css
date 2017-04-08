@@ -1,11 +1,14 @@
+body {
+  direction: rtl;
+}
 .jumbotron {
-  background: url(../images/main_banner.jpg);
+  background: url(../images/garlic.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: transparent;
-  height: 200px;
+  height: 250px;
 }
 
 .jumbotron h1, .jumbotron p {
@@ -14,4 +17,26 @@
 
 .container-fluid {
   max-width: 1280px;
+}
+
+/* Product page css updates */
+
+.user-details {position: relative; padding: 0;}
+.user-details .user-image {position: relative;  z-index: 1; width: 100%; text-align: center;}
+.user-image img { clear: both; margin: auto; position: relative;}
+
+.user-details .user-info-block {width: 100%; position: absolute; top: 55px; background: rgb(255, 255, 255); z-index: 0; padding-top: 35px;}
+.user-info-block .user-heading {width: 100%; text-align: center; margin: 10px 0 0;}
+.user-info-block .navigation {float: right; width: 100%; margin: 0; padding: 0; list-style: none; border-bottom: 1px solid #428BCA; border-top: 1px solid #428BCA;}
+.navigation li {float: right; margin: 0; padding: 0;}
+.navigation li a {padding: 20px 30px; float: right;}
+.navigation li.active a {background: #428BCA; color: #fff;}
+.user-info-block .user-body {float: right; padding: 5%; width: 90%;}
+.user-body .tab-content > div {float: right; width: 100%;}
+.user-body .tab-content h4 {width: 100%; margin: 10px 0; color: #333;}
+
+/*  updating bootstrap rtl issus */
+@media
+.navbar-nav>li {
+    float: right !important;
 }

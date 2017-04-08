@@ -14,11 +14,11 @@ $lang['META_KEYWORDS'] = '';
 $lang['SITE_NAME'] = 'Grows.Today';
 
 // Page main Banner texts
-$lang['SLOGAN_TITLE'] = 'כותרת שורה ראשונה 123 453';
-$lang['SLOGAN_TEXT1'] = 'שורה שנייה ציטוט - שורה שנייה ציטוט';
-$lang['SLOGAN_TEXT2'] = 'שורה נוספת שןרה נוספת שדל גכלכגכ'; 
+$lang['SLOGAN_TITLE'] = 'גידול ביתי אורגני';
+$lang['SLOGAN_TEXT1'] = 'לגדל ולאכול - מה כדאי? מתי לשתול? איפה ואיך?';
+$lang['SLOGAN_TEXT2'] = 'מקורות לגידול ירקות ביתיים מהזריעה ועד לליקוט'; 
 
 // Page headers;
-$lang['HEADING'] = 'טבלת שתילה';
+// $lang['HEADING'] = 'טבלת שתילה';
 
 ?>

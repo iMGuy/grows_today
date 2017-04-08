@@ -23,7 +23,7 @@
     
     $lang['SECTION_1'] = $db->query('	SELECT texts
 										FROM  `pages` 
-										WHERE  `page` =  \'index\'
+										WHERE  `page` =  \'onion\'
 										AND `slag` =  \'index_section_1\'');
 	$lang['SECTION_1'] = $db->single();
 	

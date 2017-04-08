@@ -1,7 +1,7 @@
 <?php
 
 	include 'classes/wrapper.php';
-	include 'lang/index.he.php';
+	include 'lang/table.he.php';
 	include 'menus/topmenu.php';
 	include 'classes/menu.class.php';
     
@@ -26,6 +26,20 @@
 										WHERE  `page` =  \'index\'
 										AND `slag` =  \'index_section_1\'');
 	$lang['SECTION_1'] = $db->single();
+	
+	/*
+    * Build dataTabel html structure
+    */
+	
+	$table = new Table();
+	$table->table(	'growtable',
+            		'display nowrap dataTable dtr-inline collapsed',
+                	'0',
+	            	'100%');
+	$table->sectionsingle(array_keys($product[0]),'thead','th');
+	$table->sectionsingle(array_keys($product[0]),'tfoot','td');
+	$table->sectionarray($product,'tbody','td');
+	$table_html = $table->execute();
 	
 	/*
     * check if banner text exist and if yes, create HTML code

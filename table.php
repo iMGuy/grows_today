@@ -1,5 +1,5 @@
 <?php 
-	include 'data/index.php';
+	include 'data/table.php';
 ?>
 <!DOCTYPE html>
 <html lang="he">
@@ -22,9 +22,11 @@
       <!-- Page H2 header -->
 		  <?php echo $heading ?>
       <div class="row">
-        <!-- Example row of columns -->
-        <?php echo $lang['SECTION_1']['texts'];?>
-		  </div>
+		  	<div class="col-xs-12">
+		  	  <!-- DataTable Section -->
+		      <?php echo $table_html;?>  
+		    </div>
+			</div>
       <hr>
       <footer>
           <?php include 'footer.php'; ?>
